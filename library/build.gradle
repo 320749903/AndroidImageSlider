@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        minSdkVersion 8
+        minSdkVersion 9
         targetSdkVersion 22
         versionCode 15
         versionName "1.1.5"
@@ -24,7 +24,12 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.1.1'
     compile "com.android.support:support-v4:22.1.1"
-    compile 'com.squareup.picasso:picasso:2.5.2'
+//    compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.nineoldandroids:library:2.4.0'
+
+    //https://github.com/facebook/fresco
+    //https://developers.facebook.com/docs/android/getting-started#androidstudio
+    //http://fresco-cn.org/docs/index.html#_
+    compile 'com.facebook.fresco:fresco:0.14.1'
 }
 apply from: './gradle-mvn-push.gradle'
